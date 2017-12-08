@@ -1,61 +1,68 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>Order Now!</title>
 </head>
+
 <body>
 <h1>Order Now!</h1>
+
 <form action="thanks.html"method="post">
-<fieldset>
-<Legend>Person Information</legend>
+  <fieldset>
+    <Legend>Person Information</legend>
+    <label for="name">Name:</label>
+    <input id="name" type="text" name="name">
+    <br>
 
-Name:
-  <input type="text" name="name" value="">
-<br>
-Address:
-  <input type="text" address="where you live?"value="">
-<br>
-City:
-  <input type="text" name="City" value="">
+    <label for="address">Address:</label>
+    <input id="address" type="text" name="address">
+    <br>
 
+    <label for="city">City:</label>
+    <input id="city" type="text" name="city">
 
-State:
-  <input type="text" name="State" value="">
+    <label for="state">State:</label>
+    <input id="state" type="text" name="state" size="2">
 
-Zip:
-  <input type="text" name="Zip" value="">
+    <label for="zip">Zip:</label>
+    <input id="zip" type="text" name="zip" size="5"> <br>
   </fieldset>
-<br>
 
-<fieldset>
-<Legend>Ordering Info</legend>
-Size:
-  <select name="size">
-  <option value="sn">Small</option>
-  <option value="md">Medium</option>
-  <option value="lg">Large</option>
-</select>
+  <fieldset>
+    <Legend>Ordering Info</legend>
 
-Quantity:
-  <input type="text" name="Quantity" value="">
-<br>
-</fieldset>
+  <label for="size">Size:</label>
+  <select id="size" name="size">
+    <option value="sm">Small</option>
+    <option value="md">Medium</option>
+    <option value="lg">Large</option>
+  </select>
 
-<fieldset>
-<Legend>Payment Info</legend>
-Card Type:
-  <input type="radio" name="small" value="small"> Visa
-  <input type="radio" name="big"   value="big"> Master Card
-  <input type="radio" name="small" value="Discover">Discover
-<br>
+    <label for="quantity">Quantity:</label>
+    <input id="quantity" type="text" name="quantity" size="5">
+    <br>
+  </fieldset>
 
-Credit Card Number:
-  <input type="text" name="Credit Card Number" value="">
+  <fieldset>
+    <Legend>Payment Info</legend>
+    Card Type:
+    <input id="visa" type="radio" name="card_type"value="visa">
+    <label for="visa">Visa</label>
 
-</fieldset>
+    <input id="mc" type="radio" name="card_type"value="mc">
+    <label for="mc">Master Card</label>
+
+    <label id="disc" type="radio" name="card_type"value=disc">
+    <label for="disc">Discover</label>
+    <br>
+
+    <label for="cc_number">Credit Card Number:</label>
+    <input id="cc_number" type="text" name="cc_number" size="16">
+    <br>
+  </fieldset>
+
   <input type="submit" value="Place Order"><br>
   </form>
-</body>
 
+</body>
 </html>
